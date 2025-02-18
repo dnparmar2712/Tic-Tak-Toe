@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #0f0a1f ;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+h1{
+    color: cyan;
+}
+.container{
+    text-align: center;
+}
+.board{
+    /* border: 1px solid white; */
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(3 , 70px);
+    justify-content: center;
+    gap: 1rem;
+}
+.cell{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border: 1px solid cyan;
+}
+.winner{
+    color: cyan;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+button{
+    padding: 0.5rem 1rem;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 1rem;
+}
+button:hover{
+    background: cyan;
+    color: #0f0a1f;
+}
+.name{
+    color: cyan;
+    font-size: 12px;
+}
